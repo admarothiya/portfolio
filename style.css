@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  font-family: sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+
+/* Scroll Sections */
+.page-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  padding: 40px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-card {
+  background-color: #000;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: left;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.hero-card h1 span {
+  color: #38bdf8;
+}
+
+.hero-card .role {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.hero-card .desc {
+  margin: 20px 0;
+}
+
+.btns button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btns button:first-child {
+  background-color: #38bdf8;
+  color: black;
+}
+
+.btns button:last-child {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  background: transparent;
+}
+
+.socials img {
+  width: 26px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+/* Projects Section */
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #38bdf8;
+}
+
+.projects-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #1e293b;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+
+.contact {
+  background-color: #0f172a;
+  color: white;
+  padding: 60px 40px;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+.resume-btn {
+  background-color: #38bdf8;
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: white;
+}
+
+.contact-form button {
+  background-color: #38bdf8;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0ea5e9;
+}
+
+
+.profile-pic {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #00BFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
